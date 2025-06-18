@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <title>HTML5 Canvas</title>
     <link rel="icon" href="https://fav.farm/🔥" />
+    <script
+      src="https://kit.fontawesome.com/af4372529f.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       html,
       body {
@@ -12,7 +16,15 @@
     </style>
   </head>
   <body>
-    <input class="linewidth" type="range" min="1" max="100" value="1" />
+    <div class="buttons">
+      <input class="linewidth" type="range" min="1" max="100" value="1" />
+      <button id="undo">
+        <i class="fa-solid fa-rotate-left"></i>
+      </button>
+      <button id="redo">
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+    </div>
     <canvas id="draw" width="800" height="800"> </canvas>
     <script src="script.js"></script>
   </body>
